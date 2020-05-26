@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@angular-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "ignorePatterns": ["coverage/**", "dist/**"],
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.js"],
+      "rules": {
+        "@typescript-eslint/no-empty-function": ["warn"],
+        "@typescript-eslint/ban-types": ["warn"],
+        "@angular-eslint/no-output-native": ["warn"]
+      }
+    }
+  ]
+}
